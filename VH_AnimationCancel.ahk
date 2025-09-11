@@ -1,10 +1,4 @@
-﻿# Animation Cancel for Valheim
-# Works best with FinewoodBow
-# Setup with "B" as bound key
-# F8 → toggle macro
-# PgUp / PgDn → adjust click hold
-# F9/F10 → tweak how long before B fires
-# Home/End → quick reset
+#Requires AutoHotkey v2.0
 toggle := false
 clickHold := 10   ; how long to hold left-click (ms)
 bDelay   := 8     ; delay AFTER click-up BEFORE sending B (ms)
@@ -82,3 +76,4 @@ ShowStatus() {
     ToolTip "ClickHold: " clickHold " ms | B Delay: " bDelay " ms"
     SetTimer () => ToolTip(""), -900
 }
+
